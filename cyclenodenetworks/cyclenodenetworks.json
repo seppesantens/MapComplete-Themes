@@ -91,7 +91,7 @@
         "mappings": [
           {
             "if": "rcn_ref~*",
-            "then": "<div style='color: white; background-color: #00a703; font: large; width: 1.5em; height: 1.5em; border-radius: 100%'>{rcn_ref}</div>"
+            "then": "<div style='position: absolute; top: 10px; right: 10px; color: white; background-color: #00a703; width: 20px; height: 20px; border-radius: 100%'>{rcn_ref}</div>"
           }
         ]
       },
