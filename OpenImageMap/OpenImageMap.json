@@ -1,0 +1,57 @@
+	{
+		"id": "images",
+		"title": {
+			"en": "OpenImageMap"
+		},
+		"maintainer": "Seppe Santens",
+		"icon": "https://upload.wikimedia.org/wikipedia/commons/0/06/GNOME_Photos_icon_2018.svg",
+		"description": {
+			"en": "On this map, one can find and add all sorts of images that are linked to features in OpenStreetMap"
+		},
+		"language": [
+			"en"
+		],
+		"version": "2021-05-25",
+		"startLat": 0,
+		"startLon": 0,
+		"startZoom": 12,
+		"layers": [
+			{
+				"id": "image",
+				"name": {
+					"en": "Images"
+				},
+				"source": {
+					"osmTags":{
+						"or": [
+							"image~*",
+							"mapillary~*"
+						]
+					}
+				},
+				"minzoom": 12,
+				"title": {
+					"render": {
+						"en": "Image"
+					},
+					"mappings": [
+						{
+							"if": {
+								"and": [
+									"name~*"
+								]
+							},
+							"then": {
+								"en": "{name}"
+							}
+						}
+					]
+				},
+				"icon": "https://upload.wikimedia.org/wikipedia/commons/0/06/GNOME_Photos_icon_2018.svg",
+				"tagRenderings": [
+					"images"
+				],
+				"wayHandling": 1
+			}
+		]
+	}
