@@ -6,7 +6,7 @@
 		"maintainer": "Seppe Santens",
 		"icon": "https://upload.wikimedia.org/wikipedia/commons/0/06/GNOME_Photos_icon_2018.svg",
 		"description": {
-			"en": "On this map, one can find and add all sorts of images that are linked to features in OpenStreetMap"
+			"en": "On this map, one can find all sorts of images that are linked to features in OpenStreetMap"
 		},
 		"language": [
 			"en"
