@@ -63,6 +63,28 @@
 							"key": "generator:output:electricity"
 						}
 					},
+					{
+						"render": {
+							"en": "The total height (including rotor radius) of this wind turbine is {height} metres."
+						},
+						"question": {
+							"en": "What is the total height of this wind turbine (including rotor radius), in metres?"
+						},
+						"freeform": {
+							"key": "height"
+						}
+					},
+					{
+						"render": {
+							"en": "The rotor diameter of this wind turbine is {rotor:diameter} metres."
+						},
+						"question": {
+							"en": "What is the rotor diameter of this wind turbine, in metres?"
+						},
+						"freeform": {
+							"key": "rotor:diameter"
+						}
+					},
 					"images"
 				]
 			}
