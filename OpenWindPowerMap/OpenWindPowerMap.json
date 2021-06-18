@@ -86,6 +86,17 @@
 						}
 					},
 					"images"
+				],
+				"presets": [
+					{
+						"tags": [
+							"power=generator",
+							"generator:source=wind"
+						],
+						"title": {
+							"en": "wind turbine"
+						}
+					}
 				]
 			}
 		]
