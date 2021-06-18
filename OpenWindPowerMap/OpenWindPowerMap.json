@@ -6,7 +6,7 @@
 		"maintainer": "Seppe Santens",
 		"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
 		"description": {
-			"en": "On this map, one can find all sorts of images that are linked to features in OpenStreetMap"
+			"en": "A map for showing and editing wind turbines."
 		},
 		"language": [
 			"en"
