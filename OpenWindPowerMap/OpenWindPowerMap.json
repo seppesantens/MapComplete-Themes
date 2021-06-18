@@ -87,6 +87,18 @@
 							"type": "float"
 						}
 					},
+					{
+						"render": {
+							"en": "This wind turbine went into operation on/in {start_date}."
+						},
+						"question": {
+							"en": "When did this wind turbine go into operation?"
+						},
+						"freeform": {
+							"key": "start_date",
+							"type": "date"
+						}
+					},
 					"images"
 				],
 				"presets": [
