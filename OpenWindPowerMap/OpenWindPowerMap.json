@@ -39,7 +39,9 @@
 						}
 					]
 				},
-				"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
+				"icon": {
+					"render": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg"
+				},
 				"tagRenderings": [
 					{
 						"render": {
