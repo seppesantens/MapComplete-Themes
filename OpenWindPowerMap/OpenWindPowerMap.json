@@ -39,8 +39,15 @@
 						}
 					]
 				},
-				"icon": {
-					"render": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg"
+				"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
+				"iconSize": "40, 40, bottom",
+				"label": {
+					"mappings": [
+						{
+							"if": "generator:output:electricity~^[0-9]+.*[W]$",
+							"then": "<div style='background-color: rgba(0,0,0,0.3); color: white; font-size: 8px; padding: 0.25em; border-radius:0.5em'>{generator:output:electricity}</div>"
+						}
+					]
 				},
 				"tagRenderings": [
 					{
