@@ -132,8 +132,7 @@
 				"human": {
 					"en": " megawatts",
 					"nl": " megawatt"
-				},
-				"default": true
+				}
 			},{
 				"canonicalDenomination": "kW",
 				"alternativeDenomination": ["kilowatts","kilowatt"],
