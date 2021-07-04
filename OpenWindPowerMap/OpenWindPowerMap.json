@@ -1,127 +1,162 @@
-	{
-		"id": "windpower",
-		"title": {
-			"en": "OpenWindPowerMap"
-		},
-		"maintainer": "Seppe Santens",
-		"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
-		"description": {
-			"en": "A map for showing and editing wind turbines."
-		},
-		"language": [
-			"en"
-		],
-		"version": "2021-06-18",
-		"startLat": 50.520,
-		"startLon": 4.643,
-		"startZoom": 8,
-		"layers": [
-			{
-				"id": "windturbine",
-				"name": {
+{
+	"id": "windpower",
+	"title": {
+		"en": "OpenWindPowerMap"
+	},
+	"maintainer": "Seppe Santens",
+	"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
+	"description": {
+		"en": "A map for showing and editing wind turbines."
+	},
+	"language": [
+		"en"
+	],
+	"version": "2021-06-18",
+	"startLat": 50.520,
+	"startLon": 4.643,
+	"startZoom": 8,
+	"layers": [
+		{
+			"id": "windturbine",
+			"name": {
+				"en": "wind turbine"
+			},
+			"source": {
+				"osmTags": "generator:source=wind"
+			},
+			"minzoom": 10,
+			"wayHandling": 1,
+			"title": {
+				"render": {
 					"en": "wind turbine"
 				},
-				"source": {
-					"osmTags": "generator:source=wind"
-				},
-				"minzoom": 10,
-				"wayHandling": 1,
-				"title": {
-					"render": {
-						"en": "wind turbine"
-					},
-					"mappings": [
-						{
-							"if": "name~*",
-							"then": {
-								"en": "{name}"
-							}
-						}
-					]
-				},
-				"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
-				"iconSize": "40, 40, bottom",
-				"label": {
-					"mappings": [
-						{
-							"if": "generator:output:electricity~^[0-9]+.*[W]$",
-							"then": "<div style='background-color: rgba(0,0,0,0.3); color: white; font-size: 8px; padding: 0.25em; border-radius:0.5em'>{generator:output:electricity}</div>"
-						}
-					]
-				},
-				"tagRenderings": [
+				"mappings": [
 					{
-						"render": {
-							"en": "This wind turbine is operated by {operator}."
-						},
-						"question": {
-							"en": "Who operates this wind turbine?"
-						},
-						"freeform": {
-							"key": "operator"
-						}
-					},
-					{
-						"render": {
-							"en": "The power output of this wind turbine is {generator:output:electricity}."
-						},
-						"question": {
-							"en": "What is the power output of this wind turbine? (e.g. 2.3 MW)"
-						},
-						"freeform": {
-							"key": "generator:output:electricity"
-						}
-					},
-					{
-						"render": {
-							"en": "The total height (including rotor radius) of this wind turbine is {height} metres."
-						},
-						"question": {
-							"en": "What is the total height of this wind turbine (including rotor radius), in metres?"
-						},
-						"freeform": {
-							"key": "height",
-							"type": "float"
-						}
-					},
-					{
-						"render": {
-							"en": "The rotor diameter of this wind turbine is {rotor:diameter} metres."
-						},
-						"question": {
-							"en": "What is the rotor diameter of this wind turbine, in metres?"
-						},
-						"freeform": {
-							"key": "rotor:diameter",
-							"type": "float"
-						}
-					},
-					{
-						"render": {
-							"en": "This wind turbine went into operation on/in {start_date}."
-						},
-						"question": {
-							"en": "When did this wind turbine go into operation?"
-						},
-						"freeform": {
-							"key": "start_date",
-							"type": "date"
-						}
-					},
-					"images"
-				],
-				"presets": [
-					{
-						"tags": [
-							"power=generator",
-							"generator:source=wind"
-						],
-						"title": {
-							"en": "wind turbine"
+						"if": "name~*",
+						"then": {
+							"en": "{name}"
 						}
 					}
 				]
-			}
-		],
-		"defaultBackgroundId": "CartoDB.Voyager"
-	}
+			},
+			"icon": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Wind_Turbine_%282076%29_-_The_Noun_Project.svg",
+			"iconSize": "40, 40, bottom",
+			"label": {
+				"mappings": [
+					{
+						"if": "generator:output:electricity~^[0-9]+.*[W]$",
+						"then": "<div style='background-color: rgba(0,0,0,0.3); color: white; font-size: 8px; padding: 0.25em; border-radius:0.5em'>{generator:output:electricity}</div>"
+					}
+				]
+			},
+			"tagRenderings": [
+				{
+					"render": {
+						"en": "This wind turbine is operated by {operator}."
+					},
+					"question": {
+						"en": "Who operates this wind turbine?"
+					},
+					"freeform": {
+						"key": "operator"
+					}
+				},
+				{
+					"render": {
+						"en": "The power output of this wind turbine is {generator:output:electricity}."
+					},
+					"question": {
+						"en": "What is the power output of this wind turbine? (e.g. 2.3 MW)"
+					},
+					"freeform": {
+						"key": "generator:output:electricity"
+					}
+				},
+				{
+					"render": {
+						"en": "The total height (including rotor radius) of this wind turbine is {height} metres."
+					},
+					"question": {
+						"en": "What is the total height of this wind turbine (including rotor radius), in metres?"
+					},
+					"freeform": {
+						"key": "height",
+						"type": "float"
+					}
+				},
+				{
+					"render": {
+						"en": "The rotor diameter of this wind turbine is {rotor:diameter} metres."
+					},
+					"question": {
+						"en": "What is the rotor diameter of this wind turbine, in metres?"
+					},
+					"freeform": {
+						"key": "rotor:diameter",
+						"type": "float"
+					}
+				},
+				{
+					"render": {
+						"en": "This wind turbine went into operation on/in {start_date}."
+					},
+					"question": {
+						"en": "When did this wind turbine go into operation?"
+					},
+					"freeform": {
+						"key": "start_date",
+						"type": "date"
+					}
+				},
+				"images"
+			],
+			"presets": [
+				{
+					"tags": [
+						"power=generator",
+						"generator:source=wind"
+					],
+					"title": {
+						"en": "wind turbine"
+					}
+				}
+			]
+		}
+	],
+	"units": [
+		{
+			"appliesToKey": ["generator:output:electricity"],
+			"applicableUnits": [{
+				"canonicalDenomination": "MW",
+				"alternativeDenomination": ["megawatts","megawatt"],
+				"human": {
+					"en": " megawatts",
+					"nl": " megawatt"
+				},
+				"default": true
+			},{
+				"canonicalDenomination": "kW",
+				"alternativeDenomination": ["kilowatts","kilowatt"],
+				"human": {
+					"en": " kilowatts",
+					"nl": " kilowatt"
+				}
+			},{
+				"canonicalDenomination": "W",
+				"alternativeDenomination": ["watts","watt"],
+				"human": {
+					"en": " watts",
+					"nl": " watt"
+				}
+			},{
+				"canonicalDenomination": "GW",
+				"alternativeDenomination": ["gigawatts","gigawatt"],
+				"human": {
+					"en": " gigawatts",
+					"nl": " gigawatt"
+				}
+			}]
+		}
+	],
+	"defaultBackgroundId": "CartoDB.Voyager"
+}
