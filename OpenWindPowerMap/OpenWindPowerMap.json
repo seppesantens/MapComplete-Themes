@@ -52,17 +52,6 @@
 			"tagRenderings": [
 				{
 					"render": {
-						"en": "This wind turbine is operated by {operator}."
-					},
-					"question": {
-						"en": "Who operates this wind turbine?"
-					},
-					"freeform": {
-						"key": "operator"
-					}
-				},
-				{
-					"render": {
 						"en": "The power output of this wind turbine is {generator:output:electricity}."
 					},
 					"question": {
@@ -70,6 +59,17 @@
 					},
 					"freeform": {
 						"key": "generator:output:electricity"
+					}
+				},
+				{
+					"render": {
+						"en": "This wind turbine is operated by {operator}."
+					},
+					"question": {
+						"en": "Who operates this wind turbine?"
+					},
+					"freeform": {
+						"key": "operator"
 					}
 				},
 				{
