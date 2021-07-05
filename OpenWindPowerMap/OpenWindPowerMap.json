@@ -154,7 +154,8 @@
 					"en": " gigawatts",
 					"nl": " gigawatt"
 				}
-			}]
+			}],
+			"eraseInvalidValues": true
 		}
 	],
 	"defaultBackgroundId": "CartoDB.Voyager"
