@@ -15,6 +15,9 @@
 	"startLat": 50.520,
 	"startLon": 4.643,
 	"startZoom": 8,
+	"clustering": {
+    "maxZoom": 8
+  },
 	"layers": [
 		{
 			"id": "windturbine",
