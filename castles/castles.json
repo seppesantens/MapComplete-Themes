@@ -14,7 +14,7 @@
 	"version": "2021-07-11",
 	"startLat": 34.8345,
 	"startLon": 134.7040,
-	"startZoom": 8,
+	"startZoom": 12,
 	"clustering": {
     "maxZoom": 8
   },
