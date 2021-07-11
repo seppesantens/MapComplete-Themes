@@ -1,0 +1,63 @@
+{
+	"id": "castles",
+	"title": {
+		"en": "Castles"
+	},
+	"maintainer": "Seppe Santens",
+	"icon": "https://upload.wikimedia.org/wikipedia/commons/0/04/BSicon_CASTLE.svg",
+	"description": {
+		"en": "A map for showing and editing castles."
+	},
+	"language": [
+		"en"
+	],
+	"version": "2021-07-11",
+	"startLat": 34.8345,
+	"startLon": 134.7040,
+	"startZoom": 8,
+	"clustering": {
+    "maxZoom": 8
+  },
+	"layers": [
+		{
+			"id": "castle",
+			"name": {
+				"en": "castle"
+			},
+			"source": {
+				"osmTags": "historic=castle"
+			},
+			"minzoom": 12,
+			"wayHandling": 1,
+			"title": {
+				"render": {
+					"en": "castle"
+				},
+				"mappings": [
+					{
+						"if": "name~*",
+						"then": {
+							"en": "{name}"
+						}
+					}
+				]
+			},
+			"icon": "https://upload.wikimedia.org/wikipedia/commons/0/04/BSicon_CASTLE.svg",
+			"iconSize": "40, 40, center",
+			"tagRenderings": [
+				"images"
+			],
+			"presets": [
+				{
+					"tags": [
+						"historic=castle"
+					],
+					"title": {
+						"en": "castle"
+					}
+				}
+			]
+		}
+	],
+	"defaultBackgroundId": "CartoDB.Voyager"
+}
