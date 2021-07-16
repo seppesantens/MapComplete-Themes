@@ -1,0 +1,75 @@
+{
+	"id": "lighthouse",
+	"title": {
+		"en": "OpenLighthouseMap"
+	},
+	"maintainer": "Seppe Santens",
+	"icon": "https://upload.wikimedia.org/wikipedia/commons/3/39/Lighthouse_icon_red.svg",
+	"description": {
+		"en": "A map for showing and editing lighthouses."
+	},
+	"language": [
+		"en"
+	],
+	"version": "2021-07-16",
+	"startLat": 51.33884,
+	"startLon": 3.14154,
+	"startZoom": 10,
+	"clustering": {
+    "maxZoom": 8
+  },
+	"layers": [
+		{
+			"id": "lightouse",
+			"name": {
+				"en": "lighthouse"
+			},
+			"source": {
+				"osmTags": "man_made=lighthouse"
+			},
+			"minzoom": 10,
+			"wayHandling": 1,
+			"title": {
+				"render": {
+					"en": "lighthouse"
+				},
+				"mappings": [
+					{
+						"if": "name~*",
+						"then": {
+							"en": "{name}"
+						}
+					}
+				]
+			},
+			"icon": "https://upload.wikimedia.org/wikipedia/commons/3/39/Lighthouse_icon_red.svg",
+			"iconSize": "32, 60, center",
+			"tagRenderings": [
+				"images",
+				{
+					"render": {
+						"en": "The height of this lighthouse is {height} metres."
+					},
+					"question": {
+						"en": "What is the height of this lighthouse, in metres?"
+					},
+					"freeform": {
+						"key": "height",
+						"type": "float"
+					}
+				}
+			],
+			"presets": [
+				{
+					"tags": [
+						"man_made=lighthouse"
+					],
+					"title": {
+						"en": "lighthouse"
+					}
+				}
+			]
+		}
+	],
+	"defaultBackgroundId": "Stamen.TonerLite"
+}
