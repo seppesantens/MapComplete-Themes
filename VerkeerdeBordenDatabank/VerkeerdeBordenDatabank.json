@@ -75,7 +75,7 @@
 					"nl": "geen verkeersbord"
 				}
 			},
-			"icon": "./TS_questionmark.svg.svg",
+			"icon": "./TS_questionmark.svg",
 			"tagRenderings": [
 				"images",
 				{
