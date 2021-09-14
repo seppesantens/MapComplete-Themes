@@ -36,7 +36,7 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "verkeersbord"
+					"nl": "verkeersbord {traffic_sign}"
 				}
 			},
 			"icon": "./TS_bolt.svg",
@@ -72,7 +72,7 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "geen verkeersbord"
+					"nl": "geen verkeersbord {no:trafficsign}"
 				}
 			},
 			"icon": "./TS_questionmark.svg",
