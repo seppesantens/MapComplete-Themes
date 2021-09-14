@@ -39,7 +39,7 @@
 					"nl": "verkeersbord"
 				}
 			},
-			"icon": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Map_pin_icon.svg",
+			"icon": "./TF_bolt.svg",
 			"tagRenderings": [
 				"images",
 				{
