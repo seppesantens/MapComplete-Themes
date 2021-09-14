@@ -72,7 +72,7 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "geen verkeersbord {no:trafficsign}"
+					"nl": "ontbrekend verkeersbord {no:traffic_sign}"
 				}
 			},
 			"icon": "./TS_questionmark.svg",
