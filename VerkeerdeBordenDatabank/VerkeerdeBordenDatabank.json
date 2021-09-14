@@ -80,10 +80,10 @@
 				"images",
 				{
 					"render": {
-						"nl": "Opmerking bij dit ontbrekend verkeersbord: {note}"
+						"nl": "Opmerking bij deze situatie: {note}"
 					},
 					"question": {
-						"nl": "Wat maakt dat hier een verkeersbord ontbreekt?"
+						"nl": "Wat is er mis met deze situatie?"
 					},
 					"freeform": {
 						"key": "note"
