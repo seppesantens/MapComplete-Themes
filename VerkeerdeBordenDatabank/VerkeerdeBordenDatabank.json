@@ -12,9 +12,9 @@
 		"nl"
 	],
 	"version": "2021-09-12",
-	"startLat": 51.33884,
-	"startLon": 3.14154,
-	"startZoom": 10,
+	"startLat": 51.08413,
+	"startLon": 3.449256,
+	"startZoom": 15,
 	"clustering": {
     "maxZoom": 8
   },
