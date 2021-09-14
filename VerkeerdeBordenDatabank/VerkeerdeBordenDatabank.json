@@ -44,7 +44,7 @@
 				"images",
 				{
 					"render": {
-						"nl": "{note}"
+						"nl": "Opmerking bij dit verkeersbord: {note}"
 					},
 					"question": {
 						"nl": "Wat is er mis met dit verkeersbord?"
