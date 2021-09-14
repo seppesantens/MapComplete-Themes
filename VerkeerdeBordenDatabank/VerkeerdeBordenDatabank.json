@@ -52,6 +52,24 @@
 					"freeform": {
 						"key": "note"
 					}
+				},
+				{
+					"question":{
+						"nl": "Wanneer werd dit verkeersbord laatst gesurveyed?"
+					},
+					"render": {
+						"nl": "Dit verkeersbord werd laatst gesurveyed op {survey:date}"
+					},
+					"freeform": {
+						"key": "survey:date",
+						"type": "date"
+					},
+					"mappings": [
+						{
+							"if": "survey:date:={_now:date}",
+							"then": "Vandaag gesurveyed!"
+						}
+					]
 				}
 			]
 		},
@@ -88,6 +106,24 @@
 					"freeform": {
 						"key": "note"
 					}
+				},
+				{
+					"question":{
+						"nl": "Wanneer werd deze situatie laatst gesurveyed?"
+					},
+					"render": {
+						"nl": "Deze situatie werd laatst gesurveyed op {survey:date}"
+					},
+					"freeform": {
+						"key": "survey:date",
+						"type": "date"
+					},
+					"mappings": [
+						{
+							"if": "survey:date:={_now:date}",
+							"then": "Vandaag gesurveyed!"
+						}
+					]
 				}
 			]
 		}
