@@ -6,7 +6,7 @@
 	"maintainer": "Seppe Santens",
 	"icon": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Belgian_traffic_sign_A51.svg",
 	"description": {
-		"nl": "Een kaart om verkeerde verkeersborden te tonen."
+		"nl": "Een kaart om verkeerde of ontbrekende verkeersborden te tonen."
 	},
 	"language": [
 		"nl"
@@ -39,7 +39,7 @@
 					"nl": "verkeersbord"
 				}
 			},
-			"icon": "./TF_bolt.svg",
+			"icon": "./TS_bolt.svg",
 			"tagRenderings": [
 				"images",
 				{
@@ -48,6 +48,42 @@
 					},
 					"question": {
 						"nl": "Wat is er mis met dit verkeersbord?"
+					},
+					"freeform": {
+						"key": "note"
+					}
+				}
+			]
+		},
+		{
+			"id": "notrafficsign",
+			"name": {
+				"nl": "geen verkeersbord"
+			},
+			"source": {
+				"osmTags":{
+					"and": [
+						"no:traffic_sign~*",
+						"note~*"
+					]
+				}
+			},
+			"minzoom": 10,
+			"wayHandling": 1,
+			"title": {
+				"render": {
+					"nl": "geen verkeersbord"
+				}
+			},
+			"icon": "./TS_questionmark.svg.svg",
+			"tagRenderings": [
+				"images",
+				{
+					"render": {
+						"nl": "Opmerking bij dit ontbrekend verkeersbord: {note}"
+					},
+					"question": {
+						"nl": "Wat maakt dat hier een verkeersbord ontbreekt?"
 					},
 					"freeform": {
 						"key": "note"
