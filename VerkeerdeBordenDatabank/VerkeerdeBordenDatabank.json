@@ -40,13 +40,26 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "verkeersbord {traffic_sign}",
-					"en": "traffic sign {traffic_sign}"
+					"nl": "verkeersbord",
+					"en": "traffic sign"
 				}
 			},
 			"icon": "./TS_bolt.svg",
 			"tagRenderings": [
 				"images",
+				{
+					"render": {
+						"nl": "ID verkeersbord: {traffic_sign}",
+						"en": "traffic sign ID: {traffic_sign}"
+					},
+					"question": {
+						"nl": "Wat is het ID voor dit verkeersbord?",
+						"en": "What is ID for this traffic sign?"
+					},
+					"freeform": {
+						"key": "traffic_sign"
+					}
+				},
 				{
 					"render": {
 						"nl": "Probleem bij dit verkeersbord: {traffic_sign:issue}",
@@ -100,13 +113,26 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "ontbrekend verkeersbord {no:traffic_sign}",
-					"en": "missing traffic sign {no:traffic_sign}"
+					"nl": "ontbrekend verkeersbord",
+					"en": "missing traffic sign"
 				}
 			},
 			"icon": "./TS_questionmark.svg",
 			"tagRenderings": [
 				"images",
+				{
+					"render": {
+						"nl": "ID ontbrekend verkeersbord: {no:traffic_sign}",
+						"en": "missing traffic sign ID: {no:traffic_sign}"
+					},
+					"question": {
+						"nl": "Wat is het ID voor het ontbrekende verkeersbord?",
+						"en": "What is ID for the missing traffic sign?"
+					},
+					"freeform": {
+						"key": "no:traffic_sign"
+					}
+				},
 				{
 					"render": {
 						"nl": "Probleem bij deze situatie: {traffic_sign:issue}",
