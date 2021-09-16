@@ -28,7 +28,7 @@
 				"osmTags":{
 					"and": [
 						"traffic_sign~*",
-						"note~*"
+						"traffic_sign:issue~*"
 					]
 				}
 			},
@@ -44,13 +44,13 @@
 				"images",
 				{
 					"render": {
-						"nl": "Opmerking bij dit verkeersbord: {note}"
+						"nl": "Opmerking bij dit verkeersbord: {traffic_sign:issue}"
 					},
 					"question": {
 						"nl": "Wat is er mis met dit verkeersbord?"
 					},
 					"freeform": {
-						"key": "note"
+						"key": "traffic_sign:issue"
 					}
 				},
 				{
@@ -82,7 +82,7 @@
 				"osmTags":{
 					"and": [
 						"no:traffic_sign~*",
-						"note~*"
+						"traffic_sign:issue~*"
 					]
 				}
 			},
@@ -98,13 +98,13 @@
 				"images",
 				{
 					"render": {
-						"nl": "Opmerking bij deze situatie: {note}"
+						"nl": "Opmerking bij deze situatie: {traffic_sign:issue}"
 					},
 					"question": {
 						"nl": "Wat is er mis met deze situatie?"
 					},
 					"freeform": {
-						"key": "note"
+						"key": "traffic_sign:issue"
 					}
 				},
 				{
