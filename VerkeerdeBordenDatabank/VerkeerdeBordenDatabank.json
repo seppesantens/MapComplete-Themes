@@ -6,10 +6,12 @@
 	"maintainer": "Seppe Santens",
 	"icon": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Belgian_traffic_sign_A51.svg",
 	"description": {
-		"nl": "Een kaart om verkeerde of ontbrekende verkeersborden te tonen."
+		"nl": "Een kaart om verkeerde of ontbrekende verkeersborden te tonen en te editeren.",
+		"en": "A map to show and edit incorrect or missing traffic signs."
 	},
 	"language": [
-		"nl"
+		"nl",
+		"en"		
 	],
 	"version": "2021-09-12",
 	"startLat": 51.08881,
@@ -22,7 +24,8 @@
 		{
 			"id": "trafficsign",
 			"name": {
-				"nl": "verkeersbord"
+				"nl": "verkeersbord",
+				"en": "traffic sign"
 			},
 			"source": {
 				"osmTags":{
@@ -36,7 +39,8 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "verkeersbord {traffic_sign}"
+					"nl": "verkeersbord {traffic_sign}",
+					"en": "traffic sign {traffic_sign}"
 				}
 			},
 			"icon": "./TS_bolt.svg",
@@ -44,10 +48,12 @@
 				"images",
 				{
 					"render": {
-						"nl": "Opmerking bij dit verkeersbord: {traffic_sign:issue}"
+						"nl": "Probleem bij dit verkeersbord: {traffic_sign:issue}",
+						"en": "Issue with this traffic sign: {traffic_sign:issue}"
 					},
 					"question": {
-						"nl": "Wat is er mis met dit verkeersbord?"
+						"nl": "Wat is het probleem met dit verkeersbord?",
+						"en": "What is the issue with this traffic sign?"
 					},
 					"freeform": {
 						"key": "traffic_sign:issue"
@@ -55,10 +61,12 @@
 				},
 				{
 					"question":{
-						"nl": "Wanneer werd dit verkeersbord laatst gesurveyed?"
+						"nl": "Wanneer werd dit verkeersbord laatst gesurveyed?",
+						"en": "When was this traffic sign last surveyed?"
 					},
 					"render": {
-						"nl": "Dit verkeersbord werd laatst gesurveyed op {survey:date}"
+						"nl": "Dit verkeersbord werd laatst gesurveyed op {survey:date}",
+						"en": "This traffic sign was last surveyed on {survey:date}"
 					},
 					"freeform": {
 						"key": "survey:date",
@@ -76,7 +84,8 @@
 		{
 			"id": "notrafficsign",
 			"name": {
-				"nl": "geen verkeersbord"
+				"nl": "geen verkeersbord",
+				"en": "no traffic sign"
 			},
 			"source": {
 				"osmTags":{
@@ -90,7 +99,8 @@
 			"wayHandling": 1,
 			"title": {
 				"render": {
-					"nl": "ontbrekend verkeersbord {no:traffic_sign}"
+					"nl": "ontbrekend verkeersbord {no:traffic_sign}",
+					"en": "missing traffic sign {no:traffic_sign}"
 				}
 			},
 			"icon": "./TS_questionmark.svg",
@@ -98,10 +108,12 @@
 				"images",
 				{
 					"render": {
-						"nl": "Opmerking bij deze situatie: {traffic_sign:issue}"
+						"nl": "Probleem bij deze situatie: {traffic_sign:issue}",
+						"en": "Issue with this situation: {traffic_sign:issue}"
 					},
 					"question": {
-						"nl": "Wat is er mis met deze situatie?"
+						"nl": "Wat is er mis met deze situatie?",
+						"en": "What is the issue with this situation?"
 					},
 					"freeform": {
 						"key": "traffic_sign:issue"
@@ -109,10 +121,12 @@
 				},
 				{
 					"question":{
-						"nl": "Wanneer werd deze situatie laatst gesurveyed?"
+						"nl": "Wanneer werd deze situatie laatst gesurveyed?",
+						"en": "When was this situation last surveyed?"
 					},
 					"render": {
-						"nl": "Deze situatie werd laatst gesurveyed op {survey:date}"
+						"nl": "Deze situatie werd laatst gesurveyed op {survey:date}",
+						"en": "This situation was last surveyed on {survey:date}"
 					},
 					"freeform": {
 						"key": "survey:date",
