@@ -1,7 +1,8 @@
 {
 	"id": "verkeerdeborden",
 	"title": {
-		"nl": "VerkeerdeBordenDatabank"
+		"nl": "VerkeerdeBordenDatabank",
+		"en": "Erratic Signs Database"
 	},
 	"maintainer": "Seppe Santens",
 	"icon": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Belgian_traffic_sign_A51.svg",
@@ -13,7 +14,7 @@
 		"nl",
 		"en"		
 	],
-	"version": "2021-09-12",
+	"version": "2021-09-16",
 	"startLat": 51.08881,
 	"startLon": 3.447282,
 	"startZoom": 15,
