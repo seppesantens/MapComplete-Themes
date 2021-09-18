@@ -104,7 +104,10 @@
 			"source": {
 				"osmTags":{
 					"and": [
-						"no:traffic_sign~*",
+						"or": [
+							"no:traffic_sign~*",
+							"not:traffic_sign~*"
+						],
 						"traffic_sign:issue~*"
 					]
 				}
