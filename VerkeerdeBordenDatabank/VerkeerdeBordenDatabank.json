@@ -109,8 +109,8 @@
 								"no:traffic_sign~*",
 								"not:traffic_sign~*"
 							],
-							"traffic_sign:issue~*"
 						}
+							"traffic_sign:issue~*"
 					]
 				}
 			},
