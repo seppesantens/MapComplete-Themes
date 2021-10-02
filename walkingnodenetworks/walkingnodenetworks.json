@@ -91,7 +91,7 @@
         "mappings": [
           {
             "if": "rwn_ref~*",
-            "then": "<div style='position: absolute; top: 10px; right: 10px; color: white; background-color: #00a703; width: 20px; height: 20px; border-radius: 100%'>{rwn_ref}</div>"
+            "then": "<div style='position: absolute; top: 10px; right: 10px; color: white; background-color: ##8b1e20; width: 20px; height: 20px; border-radius: 100%'>{rwn_ref}</div>"
           }
         ]
       },
