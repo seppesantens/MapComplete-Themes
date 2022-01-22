@@ -25,7 +25,6 @@
 					"osmTags":{
 						"or": [
 							"image~*",
-							"mapillary~*",
 							"wikimedia_commons~*"
 						]
 					}
