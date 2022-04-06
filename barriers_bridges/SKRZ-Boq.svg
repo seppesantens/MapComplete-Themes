@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+ <title>SKRZ-Boq</title>
+ <g stroke-width="100" fill="none">
+  <path stroke="#0079C1" d="M 190,0 V 500 m 120,0 V 0" stroke-dasharray="150,200"/>
+  <path stroke="#80A080" d="m 70,100 40,50 280,0 40,-50 m -360,300 40,-50 280,0 40,50" stroke-width="40"/>
+  <path stroke="#BE2D2C" d="M 0,250 H 500"/>
+ </g>
+</svg>

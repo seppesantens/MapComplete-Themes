@@ -67,6 +67,55 @@
 					]
 				}
 			]
+		},
+    {
+			"id": "bridge",
+			"name": {
+				"en": "bridge"
+			},
+			"source": {
+				"osmTags":"bridge~*"
+			},
+			"minzoom": 10,
+			"wayHandling": 1,
+			"title": {
+				"render": {
+					"en": "bridge"
+				}
+			},
+			"icon": "./SKRZ-Boq.svg",
+			"tagRenderings": [
+				"images",
+				{
+					"render": {
+						"en": "bridge: {barrier}"
+					},
+					"question": {
+						"en": "What kind of bridge is this?"
+					},
+					"freeform": {
+						"key": "bridge"
+					}
+				},
+				{
+					"question":{
+						"en": "When was this bridge last surveyed?"
+					},
+					"render": {
+						"en": "This bridge was last surveyed on {survey:date}"
+					},
+					"freeform": {
+						"key": "survey:date",
+						"type": "date"
+					},
+					"mappings": [
+						{
+							"if": "survey:date:={_now:date}",
+							"then": "Surveyed today"
+						}
+					]
+				}
+			]
 		}
 	]
 }
