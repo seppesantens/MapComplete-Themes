@@ -1,0 +1,73 @@
+{
+	"id": "barriers_bridges",
+	"title": {
+		"en": "barriers and bridges"
+	},
+	"maintainer": "Seppe Santens",
+	"icon": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Pin_point_location_SVG_black.svg",
+	"description": {
+		"en": "A map to show and edit barriers and bridges."
+	},
+	"language": [
+		"en"		
+	],
+	"version": "2022-04-06",
+	"startLat": 50.8912,
+	"startLon": 4.2984,
+	"startZoom": 9,
+	"clustering": {
+    "maxZoom": 8
+  },
+	"layers": [
+		{
+			"id": "barrier",
+			"name": {
+				"en": "barrier"
+			},
+			"source": {
+				"osmTags":"barrier~*"
+			},
+			"minzoom": 10,
+			"wayHandling": 1,
+			"title": {
+				"render": {
+					"en": "barrier"
+				}
+			},
+			"icon": "./UK_traffic_sign_774",
+			"tagRenderings": [
+				"images",
+				{
+					"render": {
+						"en": "barrier: {barrier}"
+					},
+					"question": {
+						"en": "What kind of barrier is this?"
+					},
+					"freeform": {
+						"key": "barrier"
+					}
+				},
+				{
+					"question":{
+						"en": "When was this barrier last surveyed?"
+					},
+					"render": {
+						"en": "This barrier was last surveyed on {survey:date}"
+					},
+					"freeform": {
+						"key": "survey:date",
+						"type": "date"
+					},
+					"mappings": [
+						{
+							"if": "survey:date:={_now:date}",
+							"then": "Surveyed today"
+						}
+					]
+				}
+			]
+		}
+	],
+	"defaultBackgroundId": "CartoDB.Voyager"
+}
