@@ -88,7 +88,7 @@
 				"images",
 				{
 					"render": {
-						"en": "bridge: {barrier}"
+						"en": "bridge: {bridge}"
 					},
 					"question": {
 						"en": "What kind of bridge is this?"
