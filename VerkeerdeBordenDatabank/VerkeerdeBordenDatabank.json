@@ -44,7 +44,7 @@
 					"en": "traffic sign"
 				}
 			},
-			"icon": "./TS_bolt.svg",
+			"icon": "https://raw.githubusercontent.com/seppesantens/MapComplete-Themes/main/VerkeerdeBordenDatabank/TS_bolt.svg",
 			"tagRenderings": [
 				"images",
 				{
@@ -122,7 +122,7 @@
 					"en": "missing traffic sign"
 				}
 			},
-			"icon": "./TS_questionmark.svg",
+			"icon": "https://raw.githubusercontent.com/seppesantens/MapComplete-Themes/main/VerkeerdeBordenDatabank/TS_questionmark.svg",
 			"tagRenderings": [
 				"images",
 				{
