@@ -13,9 +13,9 @@
   ],
   "version": "2021-05-13",
   "startLat": 51.1599,
-  "startLon": 3.34750,
+  "startLon": 3.3475,
   "startZoom": 12,
-	"clustering": {
+  "clustering": {
     "maxZoom": 12
   },
   "layers": [
@@ -25,55 +25,55 @@
         "en": "node to node links"
       },
       "source": {
-        "osmTags":{
-					"and": [
-						"network=rcn",
-						"network:type=node_network"
-					]
-				}
+        "osmTags": {
+          "and": [
+            "network=rcn",
+            "network:type=node_network"
+          ]
+        }
       },
       "minzoom": 12,
       "title": {
         "render": {
           "en": "node to node link"
         },
-				"mappings": [
-					{
-						"if": "ref~*",
-						"then": {
-							"en": "node to node link <strong>{ref}</strong>"
-						}
-					}
-				]
+        "mappings": [
+          {
+            "if": "ref~*",
+            "then": {
+              "en": "node to node link <strong>{ref}</strong>"
+            }
+          }
+        ]
       },
-			"width": {
-				"render": "4"
-			},
-			"color": {
-				"render": "#00a703"
-			},
-			"tagRenderings": [
-				{
-					"question":{
-						"en": "When was this node to node link last surveyed?"
-					},
-					"render": {
-						"en": "This node to node link was last surveyed on {survey:date}"
-					},
-					"freeform": {
-						"key": "survey:date",
-						"type": "date"
-					},
-					"mappings": [
-						{
-							"if": "survey:date:={_now:date}",
-							"then": "Surveyed today!"
-						}
-					]
-				}
-			]
+      "width": {
+        "render": "4"
+      },
+      "color": {
+        "render": "#00a703"
+      },
+      "tagRenderings": [
+        {
+          "question": {
+            "en": "When was this node to node link last surveyed?"
+          },
+          "render": {
+            "en": "This node to node link was last surveyed on {survey:date}"
+          },
+          "freeform": {
+            "key": "survey:date",
+            "type": "date"
+          },
+          "mappings": [
+            {
+              "if": "survey:date:={_now:date}",
+              "then": "Surveyed today!"
+            }
+          ]
+        }
+      ]
     },
-		{
+    {
       "id": "node",
       "name": {
         "en": "nodes"
@@ -84,10 +84,10 @@
       "minzoom": 12,
       "title": {
         "render": {
-					"en": "cycle node <strong>{rcn_ref}</strong>"
+          "en": "cycle node <strong>{rcn_ref}</strong>"
         }
       },
-			"label": {
+      "label": {
         "mappings": [
           {
             "if": "rcn_ref~*",
@@ -95,39 +95,39 @@
           }
         ]
       },
-			"tagRenderings": [
-				{
-					"question":{
-						"en": "When was this cycle node last surveyed?"
-					},
-					"render": {
-						"en": "This cycle node was last surveyed on {survey:date}"
-					},
-					"freeform": {
-						"key": "survey:date",
-						"type": "date"
-					},
-					"mappings": [
-						{
-							"if": "survey:date:={_now:date}",
-							"then": "Surveyed today!"
-						}
-					]
-				},
-				{
-					"question":{
-						"en": "How many other cycle nodes does this node link to?"
-					},
-					"render": {
-						"en": "This node links to {expected_rcn_route_relations} other cycle nodes."
-					},
-					"freeform": {
-						"key": "expected_rcn_route_relations",
-						"type": "int"
-					}
-				},
-				"images"
-			]
+      "tagRenderings": [
+        {
+          "question": {
+            "en": "When was this cycle node last surveyed?"
+          },
+          "render": {
+            "en": "This cycle node was last surveyed on {survey:date}"
+          },
+          "freeform": {
+            "key": "survey:date",
+            "type": "date"
+          },
+          "mappings": [
+            {
+              "if": "survey:date:={_now:date}",
+              "then": "Surveyed today!"
+            }
+          ]
+        },
+        {
+          "question": {
+            "en": "How many other cycle nodes does this node link to?"
+          },
+          "render": {
+            "en": "This node links to {expected_rcn_route_relations} other cycle nodes."
+          },
+          "freeform": {
+            "key": "expected_rcn_route_relations",
+            "type": "int"
+          }
+        },
+        "images"
+      ]
     }
   ]
 }
